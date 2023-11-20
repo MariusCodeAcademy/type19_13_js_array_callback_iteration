@@ -18,5 +18,12 @@ colors.forEach(function (spalva, idx, arr) {
 console.log('colUpper ===', colUpper);
 console.log('colors ===', colors);
 
-const mixed = ['red', true, 5, 7, 'white', 10];
 const nums = [5, -7, 1, -8, 7, 15, -8, 2, -7];
+// su forEach
+// atspausdinti visus skaicius
+// atspausdinti tik teigiamaus skaicius
+
+const mixed = ['red', true, 5, 7, 'white', 10];
+// su forEach
+// atspausdinti visus el tipus
+// atspausdinti skaiciu suma
