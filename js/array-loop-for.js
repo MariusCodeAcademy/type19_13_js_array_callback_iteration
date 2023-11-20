@@ -34,6 +34,20 @@ for (let element of colors) {
   console.log(`<li>${element}</li>`);
 }
 
+const spalvosUlEl = document.getElementById('spalvos');
 // su jusu pasirinktu budu
+for (let color of colors) {
+  console.log('color ===', color);
+  // sukurti
+  const liEl = document.createElement('li');
+  // prideti texta
+  liEl.textContent = color;
+  // patalpinti html
+  spalvosUlEl.append(liEl);
+}
 // sugeneruoti li elemntus su document.createElement
 // sudeti juos i <ul id="spalvos"></ul>
+let str = 'kazkoks tekstas';
+for (let raide of str) {
+  console.log('raide ===', raide);
+}
