@@ -31,10 +31,37 @@ mixed.forEach((element) => {
 // console.log(typeof mixed[1]);
 
 // i nauja masyva sudeti tik skaicius
-
+const skArr = [];
+for (let el of mixed) {
+  // jei el yra skaicius
+  if (typeof el === 'number' && !isNaN(el)) {
+    // deti i skArr
+    skArr.push(el);
+  }
+}
+console.log('skArr ===', skArr);
 // i nauja masyva sudeti tik stringus
 
 const nums = [1, 2, 3, 4];
+
 // sudeti masyvo suma
 
 // gauti masyvo vidurki
+// sekli kopija
+const numsCopy = nums.slice();
+
+const numsCopy2 = [];
+for (let sk of nums) {
+  numsCopy2.push(sk);
+}
+
+numsCopy.push(6);
+numsCopy2.push(6);
+console.log('nums ===', nums);
+console.log('numsCopy ===', numsCopy);
+console.log('numsCopy2 ===', numsCopy2);
+
+let arr1 = [1, 2];
+let arr2 = [1, 2];
+
+console.log('arr1 === arr2 ===', arr1 === arr2);
